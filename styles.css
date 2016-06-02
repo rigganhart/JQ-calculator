@@ -1,0 +1,28 @@
+.main-container {
+  display: inline-block;
+  width: 400px;
+  height:  400px;
+  background-color: blue;
+  margin: 3%;
+}
+
+
+.answer {
+  display: inline-block;
+    width: 90%;
+    height: 100px;
+    margin: 2% 1% 2% 4%;
+    text-align: center;
+
+}
+
+
+input.buttons {
+  display: inline-block;
+width: 100px;
+height: 100px;
+margin: 2% 1% 2% 4%;
+background-color: red;
+vertical-align: top;
+text-align: center;
+}
