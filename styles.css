@@ -15,7 +15,15 @@
     text-align: center;
 
 }
-
+button.buttons{
+  display: inline-block;
+width: 100px;
+height: 100px;
+margin: 2% 1% 2% 4%;
+background-color: red;
+vertical-align: top;
+text-align: center;
+}
 
 input.buttons {
   display: inline-block;

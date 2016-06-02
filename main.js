@@ -2,14 +2,19 @@
 
 
 
-//
-// found: http://stackoverflow.com/questions/487056/retrieve-button-value-with-jquery from steady_daddy
-$("input[type=button]").click(function(){
+// click on syntax and this syntax from nathan's repository from in class demo
+$("button").on('click', function(event) {
+  event.preventDefault();
   var symbol=$(this).attr("value");
-  var numOneStr = $('input[name=num_one]').attr("value");
-  var numTwoStr = $('input[name=num_one]').attr("value");
-  var numOneStrToInt = parseInt($(numOneStr));
-  console.log(symbol);
-  $('input[name=answer]').attr(numOneStr);
+  var numOneStr = $('input[name=num_one]').val();
+  var numTwoStr = $('input[name=num_two]').val();
+  var numOneStrToInt = Number($(numOneStr));
+
+
+  var answer = eval(numOneStr + symbol + numTwoStr);
+
+  console.log(typeof numOneStrToInt);
+
+  $('input[name=answer]').val(answer);
 
 });
